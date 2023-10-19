@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rag-mistral"
+version = "0.1.0"
+description = "Use langchain and ChromaDB to perform Retrieval Augmented Generation"
+authors = ["Paul Xu <yang_xu@brown.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.316"
+chromadb = "^0.4.14"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
