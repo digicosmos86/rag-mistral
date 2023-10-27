@@ -10,7 +10,25 @@ python = "^3.11"
 langchain = "^0.0.316"
 chromadb = "^0.4.14"
 python-dotenv = "^1.0.0"
+torch = {version = "^2.1.0+cu118", source = "pytorch-gpu"}
+transformers = "^4.34.1"
+accelerate = "^0.23.0"
+lanarky = "^0.7.16"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+openai = "^0.28.1"
+pysqlite3-binary = "^0.5.2.post1"
+unstructured = "^0.10.25"
+markdown = "^3.5"
+nltk = "^3.8.1"
+sentence-transformers = "^2.2.2"
+langchainhub = "^0.1.13"
+streamlit = "^1.27.2"
 
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
